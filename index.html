@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-numbers" aria-hidden="true">
+    <span class="num">4</span>
+    <span class="num">5</span>
+    <span class="num">8</span>
+    <span class="num">6</span>
+    <span class="num">1</span>
+    <span class="num">02</span>
+    <span class="num">5</span>
+    <span class="num">4</span>
+    <span class="num">0</span>
+    <span class="symbol">+</span>
+    <span class="symbol">=</span>
+    <span class="symbol">-</span>
+    <span class="num">7</span>
+    <span class="num">3</span>
+    <span class="num">9</span>
+    <span class="num">2</span>
+    <span class="symbol">×</span>
+    <span class="symbol">÷</span>
+    <span class="num">1</span>
+  </div>
+
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+  <div class="bg-orb orb4"></div>
+
+  <div class="calculator-wrapper">
+    <img src="logo.svg" alt="Calculator logo" class="site-logo" />
+    <div class="calculator">
+
+      <div class="display">
+        <div class="expression" id="expression"></div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <div class="buttons">
+        <!-- Row 1 -->
+        <button class="btn btn-clear span2" data-action="clear">AC</button>
+        <button class="btn btn-clear" data-action="backspace">⌫</button>
+        <button class="btn btn-operator" data-value="/">÷</button>
+
+        <button class="btn btn-number" data-value="7">7</button>
+        <button class="btn btn-number" data-value="8">8</button>
+        <button class="btn btn-number" data-value="9">9</button>
+        <button class="btn btn-operator" data-value="*">×</button>
+
+        <button class="btn btn-number" data-value="4">4</button>
+        <button class="btn btn-number" data-value="5">5</button>
+        <button class="btn btn-number" data-value="6">6</button>
+        <button class="btn btn-operator" data-value="-">−</button>
+
+        <button class="btn btn-number" data-value="1">1</button>
+        <button class="btn btn-number" data-value="2">2</button>
+        <button class="btn btn-number" data-value="3">3</button>
+        <button class="btn btn-operator" data-value="+">+</button>
+
+        <button class="btn btn-number span2" data-value="0">0</button>
+        <button class="btn btn-number" data-value=".">.</button>
+        <button class="btn btn-equals" data-action="equals">=</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
